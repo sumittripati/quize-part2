@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Question Tag</title>
+    <style>
+        body {
+            background-color: #f5e3c3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .container .option {
+            display: flex; /* Use flexbox to align items */
+            align-items: center; /* Center items vertically */
+            margin: 10px 0; /* Space between options */
+            font-size: 18px;
+        }
+        .container input[type="radio"] {
+            margin-right: 10px; /* Space between radio button and text */
+        }
+        .container button {
+            background-color: #e6b800;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 0 0 10px 10px;
+            width: 100%;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #d4a200;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="my-ques">Question tag</h1>
+        <form onsubmit="return false;"> 
+            <div class="option">
+                <input type="radio" class="answer" name="option" id="op-a">
+                <label for="op-a" id="text-op-a">Option A</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="answer" name="option" id="op-b">
+                <label for="op-b" id="text-op-b">Option B</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="answer" name="option" id="op-c">
+                <label for="op-c" id="text-op-c">Option C</label>
+            </div>
+
+            <div class="option">
+                <input type="radio" class="answer" name="option" id="op-d">
+                <label for="op-d" id="text-op-d">Option D</label>
+            </div>
+            
+            <button type="submit" id="sub-btn">Submit</button> 
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
